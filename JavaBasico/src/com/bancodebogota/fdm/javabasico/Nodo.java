@@ -3,30 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javabasico;
+package com.bancodebogota.fdm.javabasico;
 
 /**
  *
  * @author jnino
  */
 public class Nodo {
+
     Nodo siguiente;
-    Object dato;
+    String dato;
+
+    public Nodo(String nuevoDato) {
+        this.dato = nuevoDato;
+        this.siguiente = null;
+    }
 
     public Nodo getSiguiente() {
         return siguiente;
-    }
-
-    public void setSiguiente(Nodo siguiente) {
-        this.siguiente = siguiente;
     }
 
     public Object getDato() {
         return dato;
     }
 
-    public void setDato(Object dato) {
-        this.dato = dato;
-    }
-    
 }

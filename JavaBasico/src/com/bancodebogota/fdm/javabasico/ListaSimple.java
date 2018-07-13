@@ -19,15 +19,27 @@ public class ListaSimple {
     
     public void agregarNodo(String dato) {
         
-        Nodo nuevoElemento = new Nodo(dato);
-        if (this.primerElemento==null) {
-            this.primerElemento = nuevoElemento;
+        try {
+            Nodo nuevoElemento = new Nodo(dato);
+            if (dato instanceof String){
+                if (this.primerElemento==null) {
+                    this.primerElemento = nuevoElemento;
             
-        } else {
-            nuevoElemento.siguiente=primerElemento;
-            primerElemento = nuevoElemento;
+                } 
+                else{
+                    nuevoElemento.siguiente=primerElemento;
+                    primerElemento = nuevoElemento;
+                }
             
+            }
+            else{
+            
+            }
+        } catch (Exception e) {
+            System.out.println("Dato no es string");
         }
+        
+        
     }
     
     public void getElementosLista() {

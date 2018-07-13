@@ -40,33 +40,7 @@ public class ListaSimple {
         }
         
     }
-        
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    
-        
-        
-        /*for (int i = 0; i < tamanoLista; i++) {
-            getElemento(i);
-            System.out.println("Lista: " + primerNodo.getDato());
-        }*/
-
 }
 
-    /*public void imprimirLista() {
-        System.out.println("Lista: " + primerNodo.getDato());
-    }
-
-    public void agregarElementoEnPosicion(int pos, Object dato) {
-    }*/
-
+    
 

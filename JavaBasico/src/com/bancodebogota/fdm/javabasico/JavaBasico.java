@@ -12,14 +12,14 @@ package com.bancodebogota.fdm.javabasico;
 public class JavaBasico {
     
     
-    public void SimpleList(){
+    public void simpleList(){
         ListaSimple listaSimple = new ListaSimple();
         for (int i = 0; i < 10; i++) {
             listaSimple.agregarNodo(Integer.toString(i));
         }
         listaSimple.getElementosLista();
     }
-    public void ArrayList(){
+    public void arrayList(){
         ListaArrays listaArrays = new ListaArrays();
         listaArrays.insertElements();
     }
@@ -34,9 +34,9 @@ public class JavaBasico {
         
         JavaBasico javaBasico = new JavaBasico();
         System.out.println("*** Simple List ****\n");
-        javaBasico.SimpleList();
+        javaBasico.simpleList();
         System.out.println("\n*** ArrayList ****\n");
-        javaBasico.ArrayList();
+        javaBasico.arrayList();
 
         
     }

@@ -9,7 +9,7 @@ package com.bancodebogota.fdm.javabasico;
  *
  * @author jnino
  */
-public class ListaSimple {
+public class ListaSimple<T> {
 
     Nodo primerElemento;
 

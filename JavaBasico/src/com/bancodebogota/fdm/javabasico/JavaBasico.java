@@ -13,7 +13,7 @@ public class JavaBasico {
     
     
     public void simpleList(){
-        ListaSimple listaSimple = new ListaSimple();
+        ListaSimple listaSimple = new ListaSimple<Nodo>();
         for (int i = 0; i < 10; i++) {
             listaSimple.agregarNodo(Integer.toString(i));
         }

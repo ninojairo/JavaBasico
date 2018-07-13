@@ -15,7 +15,13 @@ public class JavaBasico {
     public void SimpleList(){
         ListaSimple listaSimple = new ListaSimple();
         for (int i = 0; i < 10; i++) {
-            listaSimple.agregarNodo(Integer.toString(i));
+            //listaSimple.agregarNodo(Integer.toString(i));
+            try {
+                listaSimple.agregarNodo(i);
+            } catch (TipoDatoException tde) {
+                System.out.println("Error Tipo Dato");
+            }
+            
         }
         listaSimple.getElementosLista();
     }
@@ -35,7 +41,7 @@ public class JavaBasico {
         JavaBasico javaBasico = new JavaBasico();
         System.out.println("*** Simple List ****\n");
         javaBasico.SimpleList();
-        System.out.println("\n*** ArrayList ****\n");
+        //System.out.println("\n*** ArrayList ****\n");
         javaBasico.ArrayList();
 
         

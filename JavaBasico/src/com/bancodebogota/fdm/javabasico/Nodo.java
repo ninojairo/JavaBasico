@@ -12,9 +12,9 @@ package com.bancodebogota.fdm.javabasico;
 public class Nodo {
 
     Nodo siguiente;
-    String dato;
+    Object dato;
 
-    public Nodo(String nuevoDato) {
+    public Nodo(Object nuevoDato) {
         this.dato = nuevoDato;
         this.siguiente = null;
     }

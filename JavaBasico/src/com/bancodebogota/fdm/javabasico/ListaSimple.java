@@ -16,69 +16,68 @@ public class ListaSimple {
     public ListaSimple() {
         this.primerElemento = null;
     }
-    
-    public void agregarNodo(String dato) {
-        
-        try {
+
+    public void agregarNodo(Object dato) throws TipoDatoException{
+
+        /*try {
             Nodo nuevoElemento = new Nodo(dato);
-            if (dato instanceof String){
-                if (this.primerElemento==null) {
+            if (dato instanceof String) {
+                if (this.primerElemento == null) {
                     this.primerElemento = nuevoElemento;
-            
-                } 
-                else{
-                    nuevoElemento.siguiente=primerElemento;
+
+                } else {
+                    nuevoElemento.siguiente = primerElemento;
                     primerElemento = nuevoElemento;
                 }
-            
+
+            } else {
+                throw new TipoDatoException("Dato no es string");
+
             }
-            else{
-            
+        } catch (TipoDatoException tde) {
+            System.out.println("Error");
+        }*/
+        
+            Nodo nuevoElemento = new Nodo(dato);
+            if (dato instanceof String) {
+                if (this.primerElemento == null) {
+                    this.primerElemento = nuevoElemento;
+
+                } else {
+                    nuevoElemento.siguiente = primerElemento;
+                    primerElemento = nuevoElemento;
+                }
+
+            } else {
+                throw new TipoDatoException("Dato no es string");
             }
-        } catch (Exception e) {
-            System.out.println("Dato no es string");
-        }
         
         
+        
+        
+
     }
-    
+
     public void getElementosLista() {
 
         Nodo elementoAuxiliar = primerElemento;
-        
-        while (elementoAuxiliar !=null){
-            System.out.println("Elemento: "+ elementoAuxiliar.dato);
+
+        while (elementoAuxiliar != null) {
+            System.out.println("Elemento: " + elementoAuxiliar.dato);
             elementoAuxiliar = elementoAuxiliar.getSiguiente();
         }
-        
+
     }
-        
-    
-    
-    
-    
-    
-    
 
-    
-
-    
-
-    
-        
-        
-        /*for (int i = 0; i < tamanoLista; i++) {
+    /*for (int i = 0; i < tamanoLista; i++) {
             getElemento(i);
             System.out.println("Lista: " + primerNodo.getDato());
         }*/
-
 }
 
-    /*public void imprimirLista() {
+/*public void imprimirLista() {
         System.out.println("Lista: " + primerNodo.getDato());
     }
 
     public void agregarElementoEnPosicion(int pos, Object dato) {
     }*/
-
-

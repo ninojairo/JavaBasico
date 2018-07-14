@@ -22,6 +22,7 @@ public class JavaBasico {
     public void arrayList(){
         ListaArrays listaArrays = new ListaArrays();
         listaArrays.insertElements();
+        listaArrays.printElements(listaArrays);
     }
     
     
@@ -33,8 +34,8 @@ public class JavaBasico {
         // TODO code application logic here
         
         JavaBasico javaBasico = new JavaBasico();
-        System.out.println("*** Simple List ****\n");
-        javaBasico.simpleList();
+        //System.out.println("*** Simple List ****\n");
+        //javaBasico.simpleList();
         System.out.println("\n*** ArrayList ****\n");
         javaBasico.arrayList();
 

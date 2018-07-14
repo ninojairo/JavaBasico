@@ -6,6 +6,7 @@
 package com.bancodebogota.fdm.javabasico;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -15,10 +16,10 @@ import java.util.List;
 public class ListaArrays {
 
     private final int TAMANO = 8;
-    private List arrayList;
+    private List<String> arrayList;
    
     public ListaArrays() {
-        this.arrayList = new ArrayList(TAMANO);
+        this.arrayList = new ArrayList<String>(TAMANO);
     }
 
     public void insertElements() {
@@ -28,9 +29,12 @@ public class ListaArrays {
         
     }
 
-    public void printElements(ArrayList arrayList) {
-        System.out.println("Lista: " + arrayList);
-
-    }
+    public void printElements(ListaArrays listaArray) {
+        Iterator <String> iterator = arrayList.iterator();
+        
+        while (iterator.hasNext()){
+            System.out.println("Lista: " + iterator.next());
+        }
+     }
 
 }

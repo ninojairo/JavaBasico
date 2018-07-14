@@ -5,11 +5,16 @@
  */
 package com.bancodebogota.fdm.javabasico;
 
+import java.util.List;
+
+
 /**
  *
  * @author jnino
  */
 public class JavaBasico {
+    
+    private ListaArrays listaArray;
     
     
     public void simpleList(){
@@ -19,10 +24,20 @@ public class JavaBasico {
         }
         listaSimple.getElementosLista();
     }
-    public void arrayList(){
-        ListaArrays listaArrays = new ListaArrays();
-        listaArrays.insertElements();
+    
+    public void crearArrayList(){
+        this.listaArray = new ListaArrays();
+        this.listaArray.insertElements();
     }
+    
+    public void sortDescList(){
+        this.listaArray.sortDescList();
+        this.listaArray.printElements();
+    }
+    
+    
+    
+    
     
     
 
@@ -33,10 +48,14 @@ public class JavaBasico {
         // TODO code application logic here
         
         JavaBasico javaBasico = new JavaBasico();
-        System.out.println("*** Simple List ****\n");
-        javaBasico.simpleList();
+        //System.out.println("*** Simple List ****\n");
+        //javaBasico.simpleList();
         System.out.println("\n*** ArrayList ****\n");
-        javaBasico.arrayList();
+        javaBasico.crearArrayList();
+        System.out.println("\n*** ArrayList Order Desc ****\n");
+        javaBasico.sortDescList();
+        
+        
 
         
     }

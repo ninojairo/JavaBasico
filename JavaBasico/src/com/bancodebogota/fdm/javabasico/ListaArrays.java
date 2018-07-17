@@ -7,6 +7,7 @@ package com.bancodebogota.fdm.javabasico;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -40,8 +41,14 @@ public class ListaArrays {
         for(String s: listaNumeros){
             System.out.println("Element: " +s);
         }
+     }
+    
+    public void sortDescListMayores(){
         
-
+        listaNumeros.stream().filter(s-> s.startsWith("1")).sorted(Comparator.reverseOrder()).forEach(System.out::println);
+        
+        
+        
     }
     
 }

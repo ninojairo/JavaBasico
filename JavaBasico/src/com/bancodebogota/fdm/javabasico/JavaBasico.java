@@ -35,6 +35,10 @@ public class JavaBasico {
         this.listaArray.printElements();
     }
     
+    public void sortDescListMayores(){
+        this.listaArray.sortDescListMayores();
+        
+    }
     
     
     
@@ -50,10 +54,12 @@ public class JavaBasico {
         JavaBasico javaBasico = new JavaBasico();
         //System.out.println("*** Simple List ****\n");
         //javaBasico.simpleList();
-        System.out.println("\n*** ArrayList ****\n");
+        //System.out.println("\n*** ArrayList ****\n");
         javaBasico.crearArrayList();
-        System.out.println("\n*** ArrayList Order Desc ****\n");
-        javaBasico.sortDescList();
+        //System.out.println("\n*** ArrayList Order Desc ****\n");
+        //javaBasico.sortDescList();
+        System.out.println("\n*** ArrayList Order Desc > 10 ****\n");
+        javaBasico.sortDescListMayores();
         
         
 

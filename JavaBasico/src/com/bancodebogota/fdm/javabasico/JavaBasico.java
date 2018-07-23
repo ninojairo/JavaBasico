@@ -5,6 +5,7 @@
  */
 package com.bancodebogota.fdm.javabasico;
 
+import java.io.File;
 import java.util.List;
 
 
@@ -35,6 +36,21 @@ public class JavaBasico {
         this.listaArray.printElements();
     }
     
+    public void fileManager(){
+        File file = new File("archivoEjemplo");
+        System.out.println("File name: " +file.getName());
+        System.out.println("Path relativo: \t" +file.getPath());
+        System.out.println("Path absoluto: \t" +file.getAbsolutePath());
+        System.out.println("Directorio padre: \t"+file.getParent());
+        System.out.println(file.exists()? "Existe": "No existe");
+        System.out.println("Last Modification: \t" +file.lastModified());
+        System.out.println(file.canWrite()?"Es de escritura":"No es de escritura");
+        System.out.println(file.canRead()?"Es de lectura":"No es de lectura");
+        System.out.println(file.isFile()? "Archivo normal": "Archivo no normal" );
+        System.out.println("Tamaño:\t" + file.length() +  " bytes" );
+        
+    }
+    
     
     
     
@@ -50,10 +66,13 @@ public class JavaBasico {
         JavaBasico javaBasico = new JavaBasico();
         //System.out.println("*** Simple List ****\n");
         //javaBasico.simpleList();
-        System.out.println("\n*** ArrayList ****\n");
-        javaBasico.crearArrayList();
-        System.out.println("\n*** ArrayList Order Desc ****\n");
-        javaBasico.sortDescList();
+//        System.out.println("\n*** ArrayList ****\n");
+//        javaBasico.crearArrayList();
+//        System.out.println("\n*** ArrayList Order Desc ****\n");
+//        javaBasico.sortDescList();
+        System.out.println("\n*** File ****\n");
+        javaBasico.fileManager();
+        
         
         
 
